@@ -16,3 +16,10 @@ gem 'unicorn-rails'
 group :doc do
   gem 'sdoc', require: false
 end
+
+group :development, :test do
+	gem 'pry-rails'
+	gem 'factory_girl_rails'
+	gem 'rspec-rails'
+	gem 'ffaker'
+end
