@@ -1,0 +1,13 @@
+TO DO:
+
+[x] Create Users
+[x] Seed Users
+[x] Setup Devise
+[x] Login/Logout (where devise comes in)
+
+[] Signup Notification
+[] Mandrill Account
+[] Meetup update interface
+[] Permission System
+[] UI/UX get it done
+[] Deploy to Heroku
