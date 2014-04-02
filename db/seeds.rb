@@ -13,6 +13,9 @@
 	{first_name: "Paolo", last_name: "Cosentino",
 		email: "fake2@faker.com", password: "password",
 		password_confirmation: "password",}
+	{first_name: "Brett", last_name: "Lischalk",
+		email: "brett@brettlischalk.com", password: "password",
+		password_confirmation: "password",}
 ].each do |hash|
 	u = User.find_or_initialize_by(email: hash[:email])
 

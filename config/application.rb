@@ -9,6 +9,12 @@ Bundler.require(:default, Rails.env)
 module Homestyle
   class Application < Rails::Application
     config.action_mailer.default_url_options = { :host => "http://homestyle.herokuapp.com/" }
+
+    keys = Rails.root.join "config/keys/#{Rails.env}.yml"
+    YAML.load_file(keys.to_s).each do |key, value|
+        ENV[key.to_s] = value
+    end unless Rails.env == "production"
+    
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

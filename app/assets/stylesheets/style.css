@@ -1,0 +1,29 @@
+html{
+	font-family: "helvetica";
+	color:#fff;
+	background: #000;
+}
+#login{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+#user_email, #user_password{
+	width:50%;
+}
+a{
+	color:#99CC00;
+}
+label{
+	margin-right: 2%;
+}
+#sign_in{
+	width:30%;
+	margin: 0 auto;
+	text-align: center;
+}
+#home{
+	max-width: 1200px;
+	width: 100%;
+	height: auto;
+}

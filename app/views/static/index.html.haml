@@ -1,8 +1,10 @@
-%h1 Static#index
-%p Find me in app/views/static/index.html.haml
-%h1 Login
+%div#login
+	%img#home(src="assets/home.jpg")
+	%h1 HomeStyle
 
-- if current_user
-	=link_to "Sign out", destroy_user_session_path, method: :delete
--else
-	=link_to "Sign in", new_user_session_path
+	- if current_user
+		=link_to "Sign out", destroy_user_session_path, method: :delete
+	-else
+		=link_to "Sign in", new_user_session_path
+
+	/ %p Find me in app/views/static/index.html.haml
