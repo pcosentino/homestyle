@@ -1,7 +1,7 @@
 %div#login
-	%img#home(src="assets/home.jpg")
 	%h1 HomeStyle
-
+	%p Welcome to homestyle. Please, have a piece of pie.
+	%img#home(src="assets/pieglove.png")
 	- if current_user
 		=link_to "Sign out", destroy_user_session_path, method: :delete
 	-else
