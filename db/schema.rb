@@ -15,9 +15,6 @@ ActiveRecord::Schema.define(version: 20140528003233) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-  enable_extension "uuid-ossp"
-  enable_extension "hstore"
-  enable_extension "pg_trgm"
 
   create_table "cms_blocks", force: true do |t|
     t.integer  "page_id",    null: false
