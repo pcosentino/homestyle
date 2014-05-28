@@ -13,6 +13,8 @@ gem 'haml-rails'
 gem 'simple_form'
 gem 'unicorn-rails'
 
+gem 'comfortable_mexican_sofa'
+
 group :doc do
   gem 'sdoc', require: false
 end
